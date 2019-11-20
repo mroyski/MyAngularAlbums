@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
     albumsArray: Album[];
     ngOnInit(): void {
         const interval = setInterval(() => {
-            this.titleCounter++, 2000;
-        });
+            this.titleCounter++;
+        }, 2000);
         setTimeout(() => clearInterval(interval), 6000);
         this.albumsArray = [
             {
