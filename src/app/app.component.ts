@@ -7,9 +7,14 @@ import { Album } from './albums/album.model';
     styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+    titleCounter = 1;
     title = 'My Angular Albums';
     albumsArray: Album[];
     ngOnInit(): void {
+        const interval = setInterval(() => {
+            this.titleCounter++, 2000;
+        });
+        setTimeout(() => clearInterval(interval), 6000);
         this.albumsArray = [
             {
                 id: 1,
