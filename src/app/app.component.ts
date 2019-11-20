@@ -7,7 +7,7 @@ import { Album } from './albums/album.model';
     styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-    title = 'my-angular-albums';
+    title = 'My Angular Albums';
     albumsArray: Album[];
     ngOnInit(): void {
         this.albumsArray = [

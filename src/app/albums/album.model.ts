@@ -4,7 +4,7 @@ export interface Album {
     albumName: string;
     genre: string;
     price: number;
-    currency: string;
+    currency?: string;
     onSale: boolean;
     year: number;
     releaseDate: string;
